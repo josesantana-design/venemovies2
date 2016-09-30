@@ -1,0 +1,51 @@
+//=============================
+          Sidebar
+//=============================
+
+.sidebar
+  width: 240px
+  height: 2000px
+  background-color: $color-four
+  position: absolute
+  left: -240px
+  transition: all .2s
+  padding-top: $space
+  z-index: 20
+
+  .sidebar__item
+    list-style: none
+
+    .sidebar__link
+      font-size: 14px
+      display: block
+      padding: 1em $space
+      color: #fff
+      text-decoration: none
+      &:hover
+        background-color: $color-five
+        color: $color-one
+      span
+        position: absolute
+        right: $space
+        font-size: 18px
+
+    .sidebar__gender
+      li a
+          padding: 1em 60px
+          display: block
+          font-size: 14px
+          color: $color-white
+          transition: all .2s
+          &:hover
+            background-color: rgba(56,64,70,0.1)
+            border-left: 5px solid $color-one
+.active
+  background-color: $color-five
+
+.open
+  left: 0
+
+// Pantallas 1024px
+@media (min-width: 1024px)
+  .sidebar
+    left: 0

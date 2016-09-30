@@ -1,0 +1,83 @@
+//=============================
+          Navbar
+//=============================
+
+.navbar
+  background-color: $color-two
+  color: $color-white
+  display: flex
+  flex-wrap: wrap
+
+  .navbar__logo
+    width: 100%
+    background-color: $color-one
+    padding: 1em $space
+    h3
+      font-weight: 600
+      display: flex
+      align-items: center
+      .icon-ticket
+        margin-right: 10px
+
+  .navbar__toggle
+    cursor: pointer
+    position: absolute
+    top: 1em
+    right: $space
+    color: $color-white
+
+  .navbar__search
+    width: 100%
+    background-color: $color-two
+    padding: 1em $space
+    .icon-search
+      position: absolute
+      top: 65px
+    input
+      width: 100%
+      background: transparent
+      border: none
+      outline: none
+      color: $color-white
+      padding-left: $space
+
+  .navbar__redes
+    box-sizing: border-box
+    width: 60.3%
+    justify-content: flex-end
+    align-items: center
+    padding-right: $space
+    display: none
+    a
+      color: $color-white
+      padding-left: 15px
+
+  // Pantallas 1024px
+  @media (min-width: 1024px)
+    .navbar__toggle,
+    .icon-bars
+      display: none
+
+    .navbar__logo
+      box-sizing: border-box
+      width: 16.9%
+      background-color: #f83745
+      padding: 1em 0px 1em 40px
+
+    .navbar__search
+      width: 17%
+      background-color: $color-two
+      padding: 1em $space
+      .icon-search
+        position: absolute
+        top: 16px
+      input
+        width: 100%
+        background: transparent
+        border: none
+        outline: none
+        color: $color-white
+        padding-left: $space
+
+    .navbar__redes
+      display: flex
